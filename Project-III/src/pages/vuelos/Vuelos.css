@@ -1,0 +1,71 @@
+.img-table{
+    width: 100%;
+    height: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.label-checkbox{
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.checkbox-input{
+    position: absolute;
+    transform: scale(0);
+}
+
+.checkbox-input:checked ~ .checkbox{
+    transform: rotate(45deg);
+    width: 10px;
+    margin-left: 8px;
+    border-color: #24c78e;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.checkbox{
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 3px solid black;
+    border-radius: 6px;
+    transition: all 0.375s;
+}
+
+
+.container-vuelos{
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulos-tabla{
+    background-color: #0045AD;
+    color: white;
+    font-size: 14px;
+}
+
+td{
+    background-color: #E6F5FF;
+    font-size: 12px;
+}
+
+.h1-tabla{
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color:#0045AD;
+}
+
+td img{
+    width: 65px;
+    height: auto;
+}
