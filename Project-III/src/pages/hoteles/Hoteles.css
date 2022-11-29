@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.titulo-pais{
+  display: flex;
+  height: 1px;
+  width: 1px;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  pointer-events: none;
+  color: #0045AD;
+}
+
+body{
+  background-color: #E6F5FF;
+}
+
+.container{
+  background-color: #E6F5FF;
+}
+.page-hotel{
+  background-color: #E6F5FF;
+}
+
+.body-hotel {
+  display: grid;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+}
+
+.container-hotel {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.container-hotel .card-hotel {
+  margin: 1em;
+  font-family: "Lato";
+  font-weight: 400;
+}
+.container-hotel .card-hotel .card-img-top-hotel {
+  position: relative;
+  z-index: 2;
+  width: 306px;
+  height: 246px;
+  transform: translateY(52%);
+  transition: 0.5s;
+}
+.container-hotel .card-hotel .card-body-hotel {
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1.25em;
+  width: 306px;
+  height: 226px;
+  background: white;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.056), 0 6.7px 5.3px rgba(0, 0, 0, 0.081), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.119), 0 41.8px 33.4px rgba(0, 0, 0, 0.144), 0 100px 80px rgba(0, 0, 0, 0.2);
+  transform: translateY(-52%);
+  transition: 0.5s;
+}
+.container-hotel .card-hotel .card-body-hotel .card-title-hotel {
+  margin: 0 0 0.70em 0;
+  font-size: 2.1em;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: "Lato";
+  
+}
+.container-hotel .card-hotel .card-body-hotel .card-text-hotel {
+  margin: 0 0 1em 0;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.4em;
+}
+.container-hotel .card-hotel .card-body-hotel .btn-hotel {
+  padding: 0.375em 0.75em;
+  color: black;
+  text-decoration: none;
+  line-height: 1.5;
+  border: 1px solid black;
+  border-radius: 0.25em;
+  transition: 0.5s;
+}
+.container-hotel .card-hotel .card-body-hotel .btn-hotel:hover {
+  color: white;
+  background: black;
+}
+.container-hotel .card-hotel:hover .card-img-top-hotel {
+  transform: translateY(2%);
+}
+.container-hotel .card-hotel:hover .card-body-hotel {
+  transform: translateY(0);
+}

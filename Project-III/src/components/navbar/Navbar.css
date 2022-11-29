@@ -1,0 +1,115 @@
+/*WEB.END*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 16vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E6F5FF;
+}
+
+/*NAV-BAR*/
+
+.lista-navbar{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    
+}
+
+.elista-navbar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    list-style:none;
+    background:#fff ;
+    border-radius: 60px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.elista-navbar:hover{
+    background: #000;
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0);
+}
+
+.elista-navbar:before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg,var(--w),var(--e));
+    border-radius: 60px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.elista-navbar:hover::before{
+    opacity: 1;
+}
+
+.elista-navbar:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,var(--w),var(--e));
+    border-radius: 60px;
+    filter: blur(15px);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.elista-navbar:hover:after{
+    opacity: 1;
+}
+
+
+.elista-navbar:hover .img-navbar{
+    transform: scale(0);
+    color: #fff;
+    transition-delay: 0s;
+}
+
+.span-navbar{
+    position: absolute;
+}
+
+.txt{
+   color: #fff;
+   font-size: 1.5em;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   transform: scale(0);
+   transition: 0.5s;
+   transition-delay: 0s;
+}
+
+
+.elista-navbar:hover .txt{
+    transform: scale(1);
+    transition-delay: 0.25s;
+
+}
+
+.img-navbar{
+    width: 40px;
+    height: 40px;
+    color: #000;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
